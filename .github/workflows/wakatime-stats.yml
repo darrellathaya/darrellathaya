@@ -19,7 +19,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=${{ github.repository_owner }}\&theme=radical\&rank_icon=github
+          options: username=${{ github.repository_owner }}\&rank_icon=github\&theme=radical
           path: profile/stats.svg
           token: ${{ secrets.GH_TOKEN }}
 
@@ -27,7 +27,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}\&theme=radical\&layout=compact\&langs_count=6
+          options: username=${{ github.repository_owner }}\&langs_count=6
           path: profile/top-langs.svg
           token: ${{ secrets.GH_TOKEN }}
 
@@ -35,7 +35,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: wakatime
-          options: username=${{ secrets.WAKATIME_USER_ID }}\&theme=radical\&layout=compact
+          options: username=${{ secrets.WAKATIME_USER_ID }}\&theme=radical
           token: ${{ secrets.WAKATIME_API_KEY }}
 
       # - name: Generate Gist

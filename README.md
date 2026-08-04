@@ -19,7 +19,7 @@
 
 <br/>
 
-<!-- <table>
+<table>
 <tr>
 <th align="center">
 <img width="420">
@@ -39,7 +39,7 @@ Github stats
 </th>
 </tr>
 <tr>
-<td> -->
+<td>
 
 [![Anurag's GitHub stats](https://github-stats-extended.vercel.app/api?username=darrellathaya)](https://github.com/stats-organization/github-stats-extended)
 

@@ -23,39 +23,19 @@
 <tr>
 <td align="center">
 <img src="./profile/stats.svg">
-<p> 
-<small>
-Github stats
-</small>
-</p>
 </td>
 <td align="center">
 <img src="./profile/top-langs.svg">
-<p> 
-<small>
-Top languages
-</small>
-</p>
 </td>
 </tr>
 <tr>
 <td align="center" colspan="2">
 <img src="./profile/wakatime.svg">
-<p> 
-<small>
-WakaTime stats
-</small>
-</p>
 </td>
 </tr>
 <tr>
 <td align="center" colspan="2">
 <img src="./profile/detailed.svg">
-<p> 
-<small>
-Detailed report
-</small>
-</p>
 </td>
 </tr>
 </table>

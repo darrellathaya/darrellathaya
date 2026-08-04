@@ -21,44 +21,38 @@
 
 <table>
 <tr>
-<th align="center">
+<td align="center">
 <p> 
 <small>
 Recent article
 </small>
 </p>
-</th>
-<th align="center">
+</td>
+<td align="center">
 <img src="./profile/stats.svg">
 <p> 
 <small>
 Github stats
 </small>
 </p>
-</th>
-<img src="./profile/top-langs.svg">
+</td>
 </tr>
 <tr>
-<td>
-
-<table>
-<tr>
-<th align="center">
+<td align="center">
+<img src="./profile/top-langs.svg">
 <p> 
 <small>
-Recent article
+Top languages
 </small>
 </p>
-</th>
-<th align="center">
+</td>
+<td align="center">
 <img src="./profile/wakatime.svg">
 <p> 
 <small>
-Github stats
+WakaTime stats
 </small>
 </p>
-</th>
-<img src="./profile/gist.svg">
+</td>
 </tr>
-<tr>
-<td>
+</table>

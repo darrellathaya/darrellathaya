@@ -22,7 +22,6 @@
 <table>
 <tr>
 <th align="center">
-<img width="420">
 <p> 
 <small>
 Recent article
@@ -30,14 +29,14 @@ Recent article
 </p>
 </th>
 <th align="center">
-![Stats](./profile/stats.svg)
+<img src="./profile/stats.svg">
 <p> 
 <small>
 Github stats
 </small>
 </p>
 </th>
-![Top Languages](./profile/top-langs.svg)
+<img src="./profile/top-langs.svg">
 </tr>
 <tr>
 <td>
@@ -45,7 +44,6 @@ Github stats
 <table>
 <tr>
 <th align="center">
-<img width="420">
 <p> 
 <small>
 Recent article
@@ -53,14 +51,14 @@ Recent article
 </p>
 </th>
 <th align="center">
-![Stats](./profile/wakatime.svg)
+<img src="./profile/wakatime.svg">
 <p> 
 <small>
 Github stats
 </small>
 </p>
 </th>
-![Top Languages](./profile/gist.svg)
+<img src="./profile/gist.svg">
 </tr>
 <tr>
 <td>

@@ -41,4 +41,8 @@ Github stats
 <tr>
 <td> -->
 
-md <img src="wakatime/stats.svg?v=1" height="300"/>
+[![Anurag's GitHub stats](https://github-stats-extended.vercel.app/api?username=darrellathaya)](https://github.com/stats-organization/github-stats-extended)
+
+![Stats](./profile/stats.svg)
+![Top Languages](./profile/top-langs.svg)
+![Pinned](./profile/pin-stats-organization-github-readme-stats.svg)

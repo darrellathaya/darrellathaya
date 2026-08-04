@@ -30,19 +30,37 @@ Recent article
 </p>
 </th>
 <th align="center">
-<img width="400">
+![Stats](./profile/stats.svg)
 <p> 
 <small>
 Github stats
 </small>
 </p>
 </th>
+![Top Languages](./profile/top-langs.svg)
 </tr>
 <tr>
 <td>
 
-[![Anurag's GitHub stats](https://github-stats-extended.vercel.app/api?username=darrellathaya)](https://github.com/stats-organization/github-stats-extended)
-
-![Stats](./profile/stats.svg)
-![Top Languages](./profile/top-langs.svg)
-![Pinned](./profile/pin-stats-organization-github-readme-stats.svg)
+<table>
+<tr>
+<th align="center">
+<img width="420">
+<p> 
+<small>
+Recent article
+</small>
+</p>
+</th>
+<th align="center">
+![Stats](./profile/wakatime.svg)
+<p> 
+<small>
+Github stats
+</small>
+</p>
+</th>
+![Top Languages](./profile/gist.svg)
+</tr>
+<tr>
+<td>

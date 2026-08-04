@@ -19,7 +19,7 @@
 
 <br/>
 
-<table>
+<!-- <table>
 <tr>
 <th align="center">
 <img width="420">
@@ -39,7 +39,7 @@ Github stats
 </th>
 </tr>
 <tr>
-<td>
+<td> -->
 
 [//]: # (wakatime-stats)
 [//]: # (end-wakatime-stats)

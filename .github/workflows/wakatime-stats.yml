@@ -1,24 +1,48 @@
-name: Wakatime Stats
+name: Update WakaTime Stats SVG
 
 on:
-  workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *'  # Run at midnight every day
+    - cron: "0 */6 * * *" # every 6 hours
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
-  update-readme-with-wakatime-stats:
-    name: Update README with Wakatime stats
+  generate-stats:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-      - uses: claserre9/wakatime-stats@master
-        with:
+      - name: Generate SVG from Vercel API
+        env:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          WAKATIME_USER_ID: ${{ secrets.WAKATIME_USER_ID }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          TABLE_STYLE: 'default' # (optional) can be 'default','box' or 'box-double'
-          MAX_LANGUAGES: '5' # (optional) any number > 5, if under 5, this will be set to 5
-          WAKATIME_TIME_RANGE: 'all_time' # (optional) can be 'last_7_days', 'last_30_days', 'last_6_months' or 'last_year'
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          set -euo pipefail
+          mkdir -p wakatime
+          curl -fsSL "https://wakatime-readme-stats.vercel.app/api/wakatimeStats?username=$GITHUB_ACTOR&api_key=$WAKATIME_API_KEY&github_token=$GH_TOKEN" \
+            -o wakatime/stats.svg
+
+      - name: Bump README cache-buster for wakatime/stats.svg (daily)
+        run: |
+          set -euo pipefail
+
+          V="$(date -u +%Y%m%d)"  # changes once per day
+
+          sed -i -E "s#(wakatime/stats\.svg)\?v=[0-9]+#\1?v=$V#g" README.md
+          sed -i -E "s#(wakatime/stats\.svg)(\"|')#\1?v=$V\2#g" README.md
+
+      - name: Commit changes to repo
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add wakatime/stats.svg README.md
+          git diff --cached --quiet && echo "No changes" && exit 0
+
+          git commit -m "Update WakaTime stats SVG (cache-bust v=$(date -u +%Y%m%d))"
+          git push

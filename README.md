@@ -1,4 +1,4 @@
-[![Views](https://komarev.com/ghpvc/?username=wahyudesu&label=Profile%20views&color=0A66C2&style=flat)]()
+[![Views](https://komarev.com/ghpvc/?username=darrellathaya&label=Profile%20views&color=0A66C2&style=flat)]()
 [![Linkedln](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/darrellathaya/)
 [![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=flat&logo=kaggle&logoColor=white)](https://www.kaggle.com/darrellathaya)
 
@@ -41,9 +41,4 @@ Github stats
 <tr>
 <td> -->
 
-<div align="center">
-  <img
-    alt="wakatime"
-    src="https://github-readme-stats-clone-ten.vercel.app/api/wakatime?username=${{ secrets.WAKATIME_USER_ID }}&theme=dracula&hide_border=true&langs_count=5&cache_seconds=1800&v=1"
-  />
-</div>
+md <img src="wakatime/stats.svg?v=1" height="300"/>

@@ -19,7 +19,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&rank_icon=github\&theme=tokyonight
+          options: username=${{ github.repository_owner }}&rank_icon=github\&theme=merko
           path: profile/stats.svg
           token: ${{ secrets.GH_TOKEN }}
 
@@ -27,7 +27,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6\&theme=tokyonight
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6\&theme=merko
           path: profile/top-langs.svg
           token: ${{ secrets.GH_TOKEN }}
 
@@ -35,7 +35,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: wakatime
-          options: username=${{ github.repository_owner }}&layout=compact\&theme=tokyonight
+          options: username=${{ github.repository_owner }}&layout=compact\&theme=merko
           token: ${{ secrets.GITHUB_TOKEN }}
 
       # - name: Generate Gist

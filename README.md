@@ -41,5 +41,9 @@ Github stats
 <tr>
 <td> -->
 
-<!--START_SECTION:waka-->
-<!--END_SECTION:waka-->
+<div align="center">
+  <img
+    alt="wakatime"
+    src="https://github-readme-stats-clone-ten.vercel.app/api/wakatime?username=darrellathaya&theme=dracula&hide_border=true&langs_count=5&cache_seconds=1800&v=1"
+  />
+</div>

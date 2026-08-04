@@ -58,10 +58,22 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           filename: profile/full-year-calendar.svg
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
           base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
+
+      - name: Detailed report
+        uses: lowlighter/metrics@latest
+        with:
+          filename: profile/detailed.svg
+          token: NOT_NEEDED
+          base: ""
+          plugin_pagespeed: yes
+          plugin_pagespeed_detailed: yes
+          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
+          plugin_pagespeed_url: https://lecoq.io
+
 
       - name: Commit cards
         run: |

@@ -19,7 +19,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&rank_icon=github&theme=radical
+          options: username=${{ github.repository_owner }}&rank_icon=github&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage,prs_commented,prs_reviewed,issues_commented&theme=radical
           path: profile/stats.svg
           token: ${{ secrets.GH_TOKEN }}
 
@@ -27,7 +27,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&theme=radical
           path: profile/top-langs.svg
           token: ${{ secrets.GH_TOKEN }}
 
@@ -35,7 +35,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: wakatime
-          options: username=${{ secrets.WAKATIME_USER_ID }}&display_format=time
+          options: username=$${{ github.repository_owner }}&display_format=time&theme=radical
           path: profile/wakatime.svg
           token: ${{ secrets.WAKATIME_API_KEY }}
 

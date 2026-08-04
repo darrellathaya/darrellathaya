@@ -49,3 +49,5 @@ WakaTime stats
 </td>
 </tr>
 </table>
+
+<img src="./profile/full-year-calendar.svg">

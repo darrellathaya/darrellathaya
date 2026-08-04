@@ -53,6 +53,15 @@ jobs:
       #     options: username=stats-organization&repo=github-readme-stats
       #     path: profile/pin-stats-organization-github-readme-stats.svg
       #     token: ${{ secrets.GH_TOKEN }}
+      
+      - name: Full-year calendar
+        uses: lowlighter/metrics@latest
+        with:
+          filename: profile/full-year-calendar.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
 
       - name: Commit cards
         run: |

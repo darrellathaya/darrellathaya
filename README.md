@@ -39,7 +39,7 @@ Top languages
 </td>
 </tr>
 <tr>
-<td align="center">
+<td align="center" colspan="2">
 <img src="./profile/wakatime.svg">
 <p> 
 <small>
@@ -47,7 +47,9 @@ WakaTime stats
 </small>
 </p>
 </td>
-<td align="center">
+</tr>
+<tr>
+<td align="center" colspan="2">
 <img src="./profile/detailed.svg">
 <p> 
 <small>

@@ -22,13 +22,6 @@
 <table>
 <tr>
 <td align="center">
-<p> 
-<small>
-Recent article
-</small>
-</p>
-</td>
-<td align="center">
 <img src="./profile/stats.svg">
 <p> 
 <small>
@@ -36,8 +29,6 @@ Github stats
 </small>
 </p>
 </td>
-</tr>
-<tr>
 <td align="center">
 <img src="./profile/top-langs.svg">
 <p> 
@@ -46,7 +37,9 @@ Top languages
 </small>
 </p>
 </td>
-<td align="center">
+</tr>
+<tr>
+<td align="center" colspan="2">
 <img src="./profile/wakatime.svg">
 <p> 
 <small>

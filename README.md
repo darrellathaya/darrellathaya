@@ -41,5 +41,4 @@ Github stats
 <tr>
 <td>
 
-[//]: # (wakatime-stats)
-[//]: # (end-wakatime-stats)
+<img src="wakatime/stats.svg?v=1" height="300"/>

@@ -44,6 +44,6 @@ Github stats
 <div align="center">
   <img
     alt="wakatime"
-    src="https://github-readme-stats-clone-ten.vercel.app/api/wakatime?username=darrellathaya&theme=dracula&hide_border=true&langs_count=5&cache_seconds=1800&v=1"
+    src="https://github-readme-stats-clone-ten.vercel.app/api/wakatime?username=${{ secrets.WAKATIME_USER_ID }}&theme=dracula&hide_border=true&langs_count=5&cache_seconds=1800&v=1"
   />
 </div>
